@@ -16,33 +16,46 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GSY-nz-FXP">
+                                <rect key="frame" x="10" y="143" width="373" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="8Qo-ob-m6U"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="150"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap Button Below" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ylQ-ye-GHp">
-                                <rect key="frame" x="10" y="312.66666666666669" width="373" height="36"/>
+                                <rect key="frame" x="10" y="313" width="373" height="36"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dqe-6I-aTF">
-                                <rect key="frame" x="136" y="408.66666666666669" width="121" height="35"/>
+                                <rect key="frame" x="136" y="409" width="121" height="34.333333333333314"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Get Location"/>
                                 <connections>
-                                    <action selector="locationButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="VAd-Qx-aak"/>
+                                    <action selector="locationButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GYs-N2-eNK"/>
                                 </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="ylQ-ye-GHp" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="PjN-jX-iM3"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ylQ-ye-GHp" secondAttribute="trailing" constant="10" id="Vjg-kM-Jgh"/>
-                            <constraint firstItem="dqe-6I-aTF" firstAttribute="top" secondItem="ylQ-ye-GHp" secondAttribute="bottom" constant="60" id="h2V-Dc-u3U"/>
-                            <constraint firstItem="dqe-6I-aTF" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="nuw-6h-uUP"/>
-                            <constraint firstItem="dqe-6I-aTF" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="zoh-ta-Psw"/>
+                            <constraint firstItem="GSY-nz-FXP" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="10" id="E9d-XG-AJT"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ylQ-ye-GHp" secondAttribute="trailing" constant="10" id="TDZ-C0-S4G"/>
+                            <constraint firstAttribute="trailing" secondItem="GSY-nz-FXP" secondAttribute="trailing" constant="10" id="Yqn-KM-YXu"/>
+                            <constraint firstItem="dqe-6I-aTF" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="a9U-dQ-Ldv"/>
+                            <constraint firstItem="dqe-6I-aTF" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="itl-M0-2Ok"/>
+                            <constraint firstItem="dqe-6I-aTF" firstAttribute="top" secondItem="ylQ-ye-GHp" secondAttribute="bottom" constant="60" id="j7k-GI-Bto"/>
+                            <constraint firstItem="ylQ-ye-GHp" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="sHg-Ge-Api"/>
+                            <constraint firstItem="ylQ-ye-GHp" firstAttribute="top" secondItem="GSY-nz-FXP" secondAttribute="bottom" constant="20" id="ypD-e4-FYV"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="locationLabel" destination="ylQ-ye-GHp" id="hou-Zq-ySO"/>
+                        <outlet property="flagLabel" destination="GSY-nz-FXP" id="lX2-30-e54"/>
+                        <outlet property="locationLabel" destination="ylQ-ye-GHp" id="74g-jR-O8y"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
