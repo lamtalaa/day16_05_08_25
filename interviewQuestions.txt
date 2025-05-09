@@ -1,0 +1,26 @@
+
+Interview Questions:
+
+1. What is retain cycle?
+A retain cycle is a memory management issue where two or more objects hold strong references to each other, preventing them from being deallocated and causing a memory leak.
+
+2. How to resolve retain cycle?
+To resolve a retain cycle, use weak or unowned references for one of the objects to break the strong reference chain and allow proper deallocation.
+
+3. Diff b/w week and unowned, when to use Unowned?
+Difference:
+
+A weak reference is optional and becomes nil when the referenced object is deallocated.
+
+An unowned reference is non-optional and assumes the referenced object will never be nil during its lifetime.
+
+When to use unowned:
+Use unowned when the referenced object will always outlive the reference, such as from a child back to a parent (e.g., a closure capturing self in a view controller).
+
+4. Explain ARC?
+ARC (Automatic Reference Counting) is a memory management system in Swift that automatically tracks and manages the lifecycle of objects by keeping a count of strong references; when the count drops to zero, the object is deallocated.
+
+5. Diff b/w Any and AnyObject?
+Any can represent an instance of any type, including value types (like Int, Struct, Enum) and reference types.
+
+AnyObject can only represent instances of class (reference) types.
